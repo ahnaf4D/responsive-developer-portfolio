@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .text-primary {
     color: #FD6E0A;
 }
@@ -67,9 +68,9 @@ nav a {
 /*Header related styles*/
 .header {
     background-color: #FFF8F3;
-    background-image: url("../images/header_bg.png"),url("../images/developer.png");
+    background-image: url("../images/header_bg.png"), url("../images/developer.png");
     background-repeat: no-repeat;
-    background-position: bottom right , top left;
+    background-position: bottom right, top left;
 }
 
 .banner {
@@ -232,10 +233,13 @@ footer {
 .footer-column {
     width: 50%;
 }
-.social-links a{
+
+.social-links a {
     margin-right: 25px;
 }
-.contact input[type="text"], .contact input[type="email"],
+
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     display: block;
     margin-bottom: 25px;
@@ -245,4 +249,17 @@ textarea {
     border-radius: 5px;
     background-color: #FFF;
     width: 100%;
+}
+/*Media Query */
+.hide{
+    display: none;
+}
+/*mobile devices*/
+@media screen and (max-width : 576px) {
+    .skills-container{
+        flex-direction: column;
+    }
+    #what-i-do-description{
+        padding: 20px;
+    }
 }
