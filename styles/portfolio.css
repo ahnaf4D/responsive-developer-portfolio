@@ -250,16 +250,23 @@ textarea {
     background-color: #FFF;
     width: 100%;
 }
+
 /*Media Query */
-.hide{
+.hide {
     display: none;
 }
+
 /*mobile devices*/
 @media screen and (max-width : 576px) {
-    .skills-container{
+
+    .skills-container,
+    .resume-container {
         flex-direction: column;
     }
-    #what-i-do-description{
+
+    #what-i-do-description {
         padding: 20px;
     }
 }
+
+@media screen and (max-width : 576px) and (min-width : 992px) {}
