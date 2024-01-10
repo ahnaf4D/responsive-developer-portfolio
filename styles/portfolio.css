@@ -259,14 +259,28 @@ textarea {
 /*mobile devices*/
 @media screen and (max-width : 576px) {
 
-    .skills-container,
-    .resume-container {
+    .skills-container, .resume-container , footer {
         flex-direction: column;
     }
 
     #what-i-do-description {
         padding: 20px;
     }
+    footer{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea{
+        width: 80%;
+    }
 }
 
-@media screen and (max-width : 576px) and (min-width : 992px) {}
+@media screen and (max-width : 576px) and (min-width : 992px) {
+    footer{
+        width: 30%;
+    }
+}
